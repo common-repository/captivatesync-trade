@@ -1,0 +1,653 @@
+/***************
+INCLUDE BOOTSTRAP
+****************/
+
+@import "bootstrap/_functions.scss";
+@import "bootstrap/_variables.scss";
+@import "bootstrap/_mixins.scss";
+@import "bootstrap/_utilities.scss";
+@import "bootstrap/_root.scss";
+@import "bootstrap/bootstrap-grid.scss";
+@import "bootstrap/_modal.scss";
+@import "bootstrap/_forms.scss";
+@import "bootstrap/_buttons.scss";
+
+/****************
+BODY STYLING
+****************/
+
+.tooltip.show {
+	z-index: 9995;
+}
+
+.tooltip .arrow {
+	margin-left: 0;
+}
+
+.cb-tooltip {
+	opacity: 1 !important;
+}
+
+.wp-admin {
+    background: #F9F9F9;
+}
+
+.cfmh {
+	overflow: hidden;
+}
+
+
+.wrap.cfmh.cfm-hosting-podcasts, .wrap.cfmh.cfm-hosting-publish-episode, .wrap.cfmh.cfm-hosting-podcast-episodes, .wrap.cfmh.cfm-hosting-credentials, .wrap.cfmh.cfm-hosting-shortcode {
+	width: 90%;
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 40px;
+	padding: 40px;
+	background: #fff;
+	// box-shadow: whitesmoke 0px 0px 9px 6px
+}
+
+body #wpwrap #wpcontent {
+    background: #F9F9F9;
+}
+
+.cfm-content-wrap {
+	font-size: 16px;
+}
+
+.cfm-tutorial-link {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 14px;
+	a {
+		color: #DD9EAA;
+		&:hover {
+			color: #DD9EAA;
+			text-decoration: underline;
+		}
+	}
+}
+
+/***************
+HIDDEN CLASSES
+****************/
+
+.hide {
+	display: none;
+}
+
+/****************
+TABLE
+****************/
+
+.cfm-table {
+	width: 100%;
+	table {
+		width: 100%;
+		background: #fff;
+		th {
+			padding: 10px;
+		}
+		td.cfm-td-info a {
+			color: #292929;
+		}
+	}
+}
+
+.no-show {
+	padding: 20px;
+}
+
+/*****************
+BUTTON STYLING
+*****************/
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #29ab57;
+    border-color: #29ab57;
+    &:hover, &:focus, &:active {
+    	background-color: #1f753d;
+    	border-color: #1f753d;
+    	color: #fff !important;
+    }
+}
+
+.btn-secondary {
+	color: #212529;
+	background-color: #e2e6ea;
+	border-color: #dae0e5;
+	&:hover, &:focus, &:active {
+		color: #212529;
+		border-color: #dae0e5;
+		background-color: #a7b3bf;
+	}
+}
+
+.btn {
+    padding: 0.375rem 0.75rem !important;
+    font-size: 16px !important;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem !important;
+    font-size: 20px !important;
+    line-height: 1.5 !important;
+    border-radius: 0.3rem !important;
+}
+
+.btn-outline-success:hover {
+	color: #ffffff !important;
+}
+
+/****************
+DATA TABLE
+*****************/
+
+body .cfm-data-table.filter-enabled {
+	margin-top: 0px;
+}
+
+/****************
+BREADCRUMBS
+*****************/
+
+.cfm-breadcrumb {	
+}
+
+	.cfm-breadcrumb a{
+		text-decoration: none;
+	}
+
+/****************
+MODALS
+****************/
+
+.modal {
+	top: 50px;
+}
+
+.modal-title {
+	font-size: 2em;
+    margin: 0px;
+    font-weight: 300;
+}
+
+/****************
+SHOW SELECTOR
+****************/
+
+.cfm-sync-progress {
+	font-weight: bold;
+}
+
+.cfm-sync-shows {
+	list-style: none;
+}
+
+	.cfm-failed {
+		color: red;
+	}
+
+.show-object {
+	padding: 20px;
+	border: 1px solid #e2e2e2;
+}
+
+	.last-sync {
+		color: #929292;
+	}
+
+/****************
+FOOTER
+****************/
+
+.cfm-footer {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #C8C8C8;
+	a {
+		color: #C8C8C8;
+		&:hover{
+			color: #d89ab3;
+		}
+	}
+	p {
+		color: #C8C8C8;
+	}
+}
+
+	.rbm-logo {
+		display: inline-block;
+		transition: 0.3s all;
+		opacity: 0.4;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+/*****************
+ERRORS
+******************/
+
+.cfm-field-error {
+	border: 1px solid #c50000 !important;
+}
+
+.cfm-field-error-text {
+	color: #c50000 !important;
+}
+
+/*****************
+EPISODE UPLOADER
+*****************/
+
+#cfm-episode-upload-preloader {
+   padding: 15px 30px 5px;
+   background: #f8f9fa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cfm-episode-upload-message i {
+    margin-right: 10px;
+}
+
+.cfm-episode-upload-progress {
+    width: 100%;
+    background-color: #e9ecef;
+   border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.cfm-episode-upload-progress .progress-bar {
+    background-image: linear-gradient(to right,#a689be,#c28dad,#df9ba9,#efb6ba,#f8e8d8);
+	background-size: 100%;
+    height: 40px;
+    width: 0;
+}
+
+/*****************
+EPISODE PUBLISH
+*****************/
+
+#cfm-field-wpeditor,
+#cfm-field-wpeditor-long-description {
+	height: 340px !important;
+}
+
+.cfm-timepicker .dropdown-menu {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.cfm-hosting-publish-episode .podcast-uploader {
+	background: #fff;
+    padding: 40px;
+}
+
+.cfm-hosting-publish-episode .podcast-uploader .dropzone {
+	border: 2px dotted #c58fac;
+    border-radius: 10px;
+	background: none;
+	padding: 10px;
+}
+
+.cfm-hosting-publish-episode .podcast-uploader .dropzone * {
+	color: #c58fac;
+}
+
+.cfm-hosting-publish-episode .podcast-uploader .dz-message {
+	margin: 0;
+}
+
+.cfm-hosting-publish-episode .podcast-uploader .dz-preview {
+	width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.cfm-hosting-publish-episode .podcast-uploader .upload-actions {
+	text-align: center;
+}
+
+.cfm-hosting-publish-episode .podcast-uploader .upload-actions a,
+.cfm-hosting-publish-episode .podcast-uploader .upload-actions button {
+	display: inline-block;
+	margin: 20px;
+	font-size: 16px;
+}
+
+.cfm-hosting-publish-episode .cfm-field-heading {
+	font-weight: 500;
+	background: #f5f5f5;
+	padding: 15px 10px;
+}
+
+.cfm-episode-settings-left .cfm-artwork-upload {
+	position: relative;
+}
+
+.cfm-episode-settings-left .cfm-artwork-upload input[type=file] {
+	display: none;
+}
+
+.cfm-seo-description-count {
+	height: 10px;
+	background: #e9ecef;
+	margin-top: 5px;
+	border-radius: 3px;
+	.cfm-seo-description-progress {
+		height: 10px;
+		border-radius: 3px;
+	}
+}
+
+.cfm-episode-settings-left #artwork-dropzone {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	top: 0;
+    left: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.cfm-episode-settings-left #artwork-dropzone span {
+	font-size: 20px;
+	max-width: 80%;
+}
+
+.cfm-episode-settings-left #artwork-dropzone span i {
+	display: block;
+	font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cfm-episode-settings-left #artwork-preview {
+	width: 100%;
+}
+
+.cfm-episode-settings-left .cfm-artwork-upload:hover #artwork-dropzone {
+	opacity: 1;
+}
+
+.cfm-episode-settings-left .cfm-artwork-upload .pwaui-btn-secondary {
+	margin: 20px 0 10px 0;
+	white-space: pre-wrap;
+}
+
+.cfm-episode-settings-left .cfm-episode-audio-upload .podcast-uploader {
+	background: none;
+	padding: 0;
+	max-width: 100%;
+}
+
+.cfm-episode-settings-left .cfm-episode-audio-upload .podcast-uploader button {
+	margin-bottom: 20px;
+}
+
+.cfm-episode-settings-left .cfm-episode-audio-upload .col-sm-8 {
+	-ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.cfm-episode-settings-left .cfm-episode-audio-upload #upload-skip {
+	display: none;
+}
+
+.cfm-episode-settings-left .featured-image-preview {
+	display: none;
+}
+
+.cfm-episode-settings-left .featured-image-preview.active {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.cfm-episode-settings-left #featured-image-upload {
+	width: 100%;
+	white-space: normal;
+}
+
+.cfm-episode-settings-left .cfm-episode-audio p {
+	display: flex;
+    align-items: center;
+}
+
+.cfm-episode-settings-left .cfm-episode-audio p > i {
+	font-size: 32px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cfm-episode-settings-left .cfm-episode-audio p > span {
+	color: #f15a24;
+	white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.cfm-website-categories-wrap,
+.cfm-website-tags-wrap {
+	max-height: 214px;
+	overflow-y: auto;
+}
+
+.cfm-field-list-check ul li,
+.cfm-field-list-check ul label {
+	margin: 0;
+}
+	
+.cfm-website-categories-wrap ul.children {
+	padding-left: 26px;
+}
+
+.ui-datepicker {
+	padding: 0 !important;
+	width: 234px !important;
+	background: #fff;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	background: #f8f9fa;
+    border: 0;
+}
+
+.ui-datepicker-header > a {
+	top: 4px !important;
+	text-align: center;
+    padding: 4px 10px !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.ui-datepicker-header > a span {
+	display: none !important;
+}
+
+.ui-datepicker-header > a:after {
+	color: #c58fac;
+	font-family: "FontAwesome";
+    top: 0;
+    font-weight: 400;
+}
+
+a.ui-datepicker-prev:after {
+	content: "\f053";
+}
+
+a.ui-datepicker-next:after {
+	content: "\f054";
+}
+
+.ui-datepicker-header > a:hover {
+	background: none;
+	border: 0;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 34px;
+}
+
+.ui-datepicker-title select {
+	width: 50%;
+	padding: 0 .5rem;
+    font-size: .875rem !important;
+    height: 1.85rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    background-color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.ui-datepicker-calendar thead {
+	background: #f8f9fa;
+    color: #c58fac;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    font-family: Poppins,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.ui-datepicker-calendar tbody td a {
+	border-color: #fff !important;
+	background: none !important;
+	border-radius: .25rem;
+	text-align: center;
+	color: #212529;
+	font-family: Poppins,sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ui-datepicker-calendar tbody td a:hover {
+	color: #212529;
+    background-color: #e2e6ea !important;
+    border-color: #dae0e5 !important;
+}
+
+.ui-datepicker-calendar td.ui-datepicker-other-month a {
+	 color: #6c757d;
+}
+
+.ui-datepicker-calendar td.ui-datepicker-today a {
+	background-color: #c58fac!important;
+	color: #fff;
+}
+
+.ql-snow * {
+    font-size: 16px;
+}
+
+.ql-editor p, .ql-editor ol, .ql-editor ul, .ql-editor pre, .ql-editor blockquote, .ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6 {
+    margin-bottom: 20px !important;
+}
+
+.cfm-field-group.cfm-featured-image-upload {
+    margin-top: 50px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+	height: 38px;
+	padding: 7px !important;
+	line-height: 21px;
+}
+
+.form-control {
+	padding: 6px 12px !important;
+	font-size: 16px !important;
+	height: auto;
+	min-height: 38px;
+}
+
+@media screen and (max-width: 767px) {
+	.wrap.cfmh.cfm-hosting-podcasts, .wrap.cfmh.cfm-hosting-publish-episode, .wrap.cfmh.cfm-hosting-podcast-episodes, .wrap.cfmh.cfm-hosting-credentials {
+		padding: 10px;
+	}
+	body .cfm-page-heading .cfm-page-title {
+	    font-size: 20px;
+	    margin-top: 20px;
+	    text-align: center;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cfm-table {
+		border: 0;
+	}
+	.cfm-table thead,
+	.cfm-table th:not(.cfm-th-title),
+	.cfm-table td:not(.cfm-td-title) {
+		display: none;
+	}
+	.cfm-table td {
+		border: 0;
+	}
+	.cfm-table .cfm-td-title {
+		font-size: 16px;
+	}
+	.cfm-table .cfm-td-title p {
+		display: block;
+	}
+	.cfm-table .cfm-td-title p > span {
+		display: block;
+		margin-bottom: 4px;
+	}
+	.cfm-table .cfm-td-title p > span a {
+		margin: 4px 5px 4px 0;
+	}
+	
+}
+@media screen and (max-width: 767px) {
+	.cfm-page-heading img {
+		float: none !important;
+	}
+	
+	.cfm-shows .media {
+		display: block;
+		text-align: center;
+	}
+	.cfm-shows .media-body {
+		margin-top: 10px;
+	}
+	.cfm-shows button,
+	.cfm-shows a.btn {
+		margin-bottom: 10px;
+	}
+	
+	.cfm-hosting-publish-episode .podcast-uploader {
+		padding: 0;
+	}
+	.cfm-hosting-publish-episode #upload-audio,
+	.cfm-hosting-publish-episode #upload-skip {
+		margin: 20px 0;
+	}
+	.cfm-publish-options .cfm-submit {
+		text-align: center !important;
+	}
+	.cfm-publish-options .cfm-submit a.btn {
+		float: none !important;
+	}
+	.cfm-publish-options .cfm-submit button {
+		margin: 0 20px 20px !important;
+	}
+	.cfm-footer {
+		margin-bottom: 80px;
+	}
+}
